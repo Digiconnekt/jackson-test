@@ -27,6 +27,8 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
         }
 
         h1, h2 {
@@ -38,18 +40,11 @@
             color: #555;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-            display: block;
-            margin: 0 auto; /* Center the image */
-        }
-
-        .thumbnail {
+        img.thumbnail {
             max-width: 100px;
             height: auto;
             border-radius: 4px;
+            margin-right: 20px; /* Add margin to separate thumbnail from text */
         }
     </style>
 </head>
@@ -61,11 +56,13 @@
 
     <main>
         <img class="thumbnail" src="src/profile-picture.jpg" alt="My Profile Picture">
-        <h2>Jackson</h2>
-        <p>Web Developer</p>
-        <p>I am a hobbyist Web Developer.... </p>
-        <p>Email: jacksevm@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/jacksevm" target="_blank">jacksevm</a></p>
+        <div>
+            <h2>Jackson Pereira</h2>
+            <p>Web Developer</p>
+            <p>I am a hobbyist Web Developer.... </p>
+            <p>Email: jacksevm@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/jacksevm" target="_blank">jacksevm</a></p>
+        </div>
     </main>
 
 </body>
